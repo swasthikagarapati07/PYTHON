@@ -1,0 +1,13 @@
+num=int(input())
+sum=0
+product=1
+temp=num
+while temp>0:
+    digit=temp%10
+    sum = sum+digit
+    product =product*digit
+    temp = temp//10
+    if sum==product:
+        print("Spy number")
+    else:
+        print("Not Spy number")
