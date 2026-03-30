@@ -1,0 +1,3 @@
+import p
+print(p.add(10,5))
+print(p.sub(10,5))
