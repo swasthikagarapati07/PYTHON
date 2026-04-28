@@ -1,0 +1,12 @@
+class InsufficientFunds(Exception):
+  pass
+balance=1000
+amount=int(input())
+try:
+  if amount>1000:
+    print("Sorry balance is not sufficient")
+  else:
+    balance-=amount
+    print("Withdraw success and remaining balance:",balance)
+except InsufficientFunds as e:
+  print("ERROR",e)
