@@ -1,0 +1,7 @@
+import tkinter as tk
+window=tk.Tk()
+def click():
+    print("Hello CSE7 Students")
+button=tk.Button(window,text="click me",command=click)
+button.pack()
+window.mainloop
